@@ -5,19 +5,19 @@ iTARI is an iterative algorithm that takes as its input previously-defined targe
 ##Usage
 refined_gset <- iTARI(geneExp, tarGene, iterativeMax, setMin, corCut, permTimes, channel)
 ###iTARI requires as input two data sources:
-(1) geneExp: a preliminary target gene list of a regulator.
+(1) geneExp: a preliminary target gene list of a regulator.<br />
 (2) tarGene: a dataset of gene expression profiles of samples from a context of interest.
 ###iTARI also requires five parameters:
-(1) iterativeMax: the minimum allowable length of a target gene list, default set to 10.
-(2) setMin: the maximum number of allowed iterations, default set to 20.
-(3) corCut: the minimum correlation threshold, either as a value (0-1), default set to 0.1.
-(4) permTimes: the number of permutation times in BASE, default set to 1000.
+(1) iterativeMax: the minimum allowable length of a target gene list, default set to 10.<br />
+(2) setMin: the maximum number of allowed iterations, default set to 20.<br />
+(3) corCut: the minimum correlation threshold, either as a value (0-1), default set to 0.1.<br />
+(4) permTimes: the number of permutation times in BASE, default set to 1000.<br />
 (5) channel: the Microarray channel of dataset of gene expression profiles of samples, True means one channel and FALSE means two channel, default set to T.
 
 ##Install
-(1) download the iTARI_0.0.1.tar.gz file
-(2) install the package using install.package("path/iTARI_0.0.1.tar.gz")
-(3) library("iTARI_0.0.1.tar.gz")
+(1) download the iTARI_0.0.1.tar.gz file.<br />
+(2) install the package using install.package("path/iTARI_0.0.1.tar.gz").<br />
+(3) library("iTARI_0.0.1.tar.gz").<br />
 
 ##Example
 refined_gset <- iTARI(geneExp = "TCGA", tarGene = "MSigDB", iterativeMax = 10, setMin = 20, corCut = 0.1, permTimes = 1000, channel = T)
